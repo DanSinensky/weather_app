@@ -1,3 +1,4 @@
+/* Grid with no footer */
 .big-container {
     display: grid;
     grid-template-columns: 1.5fr 3fr 0.5fr;
@@ -5,24 +6,14 @@
     grid-template-areas: 
     "one one one"
     "two three four";
-    background-color: gray;
     height: 100vh;
     margin: auto;
   }
 
   header {
-    background-image: url();
+    background-color: gray;
     grid-area: one;
   }
-
-  header img {
-    width: 100%;
-  }
-
-  .header {
-    display: table;
-  }
-  
 
   .left {
     background-color: blue;
@@ -38,10 +29,19 @@
     background-color: green;
     grid-area: four;
   }
+  /* Image scales */
+  header img {
+    width: 100%;
+  }
+
+  /* Table and table-cell display makes h1 take up less space.
+  Couldn't get input on same line as h1 */
+  .header {
+    display: table;
+  }
 
   h1 {
     display: table-cell;
-    width: 1px;
     white-space: nowrap;
 }
   
