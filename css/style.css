@@ -1,0 +1,56 @@
+.big-container {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 0.5fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+    "one one one"
+    "two three four";
+    background-color: gray;
+    height: 100vh;
+    margin: auto;
+  }
+
+  header {
+    background-image: url();
+    grid-area: one;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .header {
+    display: table;
+  }
+  
+
+  .left {
+    background-color: blue;
+    grid-area: two;
+  }
+
+  main {
+    background-color: yellow;
+    grid-area: three;
+  }
+
+  .right {
+    background-color: green;
+    grid-area: four;
+  }
+
+  footer {
+    background-color: purple;
+    grid-area: five;
+  }
+
+  h1 {
+    display: table-cell;
+    width: 1px;
+    white-space: nowrap;
+}
+  
+input {
+    display: table-cell;
+    padding: 0 4px 0 6px;
+}
