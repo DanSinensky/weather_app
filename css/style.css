@@ -39,11 +39,6 @@
     grid-area: four;
   }
 
-  footer {
-    background-color: purple;
-    grid-area: five;
-  }
-
   h1 {
     display: table-cell;
     width: 1px;
